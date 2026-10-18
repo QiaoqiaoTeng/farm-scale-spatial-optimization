@@ -1,0 +1,210 @@
+{
+  "paper_title": "An Integrated Framework Coupling Mechanistic and Interpretable Surrogate Models for Farm-Scale Multi-Objective Spatial Optimization",
+  "provenance": "Extracted from uploaded original_farm_optimization.py; not editorially revised",
+  "optimizer": {
+    "generations": 200,
+    "population": 100,
+    "seed": 1,
+    "n_objectives": 3,
+    "n_decision_variables": 138,
+    "mutation_probability": 0.007246376811594203,
+    "mutation_eta": 20,
+    "local_search_probability": 0.8,
+    "median_filter_size": 3
+  },
+  "surrogate": {
+    "n_estimators": 100,
+    "random_state": 42,
+    "models": "one two-output RandomForestRegressor per crop",
+    "features": [
+      "Density_plants_m2",
+      "Fert_Weight_kg_ha"
+    ],
+    "targets": [
+      "Yield_kg_ha",
+      "ET_mm"
+    ]
+  },
+  "bounds": {
+    "density_plants_m2": {
+      "Rice": [
+        15.0,
+        40.0
+      ],
+      "Maize": [
+        3.0,
+        18.0
+      ],
+      "Soybean": [
+        10.0,
+        35.0
+      ]
+    },
+    "fertilizer_kg_ha": {
+      "Rice": [
+        1800.0,
+        3400.0
+      ],
+      "Maize": [
+        900.0,
+        2700.0
+      ],
+      "Soybean": [
+        250.0,
+        2000.0
+      ]
+    }
+  },
+  "economic": {
+    "crop_price_cny_per_kg": {
+      "Maize": 2.6401,
+      "Soybean": 4.718,
+      "Rice": 2.8366
+    },
+    "base_cost_cny_per_ha": {
+      "Maize": 7591.9216,
+      "Soybean": 6253.4778,
+      "Rice": 14249.538
+    },
+    "fert_price_per_kg_n_as_coded": {
+      "Maize": 5.908,
+      "Soybean": 4.718,
+      "Rice": 6.896
+    },
+    "base_carbon_kg_co2e_per_ha": {
+      "Maize": 1200,
+      "Soybean": 800,
+      "Rice": 4500
+    },
+    "n_fert_carbon_factor": 8.3,
+    "p_fert_carbon_factor": 1.2,
+    "k_fert_carbon_factor": 0.8
+  },
+  "constraints": {
+    "minimum_maize_area_ha_as_coded": 10000,
+    "minimum_soybean_area_ha_as_coded": 10000
+  },
+  "fields": {
+    "paddy_indices": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "dryland_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54
+    ],
+    "total_area_ha_as_coded": 47609.0,
+    "area_by_field_ha_as_coded": {
+      "1": 500.0,
+      "2": 500.0,
+      "3": 500.0,
+      "4": 500.0,
+      "5": 704.0,
+      "6": 605.0,
+      "7": 805.0,
+      "8": 226.0,
+      "9": 339.0,
+      "10": 890.0,
+      "11": 696.0,
+      "12": 1000.0,
+      "13": 459.0,
+      "14": 501.0,
+      "15": 800.0,
+      "16": 694.0,
+      "17": 821.0,
+      "18": 572.0,
+      "19": 864.0,
+      "20": 710.0,
+      "21": 306.0,
+      "22": 3670.0,
+      "23": 3670.0,
+      "24": 3670.0,
+      "25": 536.0,
+      "26": 536.0,
+      "27": 752.0,
+      "28": 313.0,
+      "29": 313.0,
+      "30": 198.0,
+      "31": 132.0,
+      "32": 100.0,
+      "33": 100.0,
+      "34": 100.0,
+      "35": 100.0,
+      "36": 585.0,
+      "37": 585.0,
+      "38": 780.0,
+      "39": 780.0,
+      "40": 680.0,
+      "41": 1253.0,
+      "42": 473.0,
+      "43": 940.0,
+      "44": 740.0,
+      "45": 1105.0,
+      "46": 250.0,
+      "47": 1712.0,
+      "48": 1644.0,
+      "49": 1766.0,
+      "50": 974.0,
+      "51": 661.0,
+      "52": 905.0,
+      "53": 1094.0,
+      "54": 3500.0
+    }
+  },
+  "limitations": [
+    "Field-number median filtering is not geographic-adjacency filtering",
+    "RF training does not include Soil_ID as a feature",
+    "WGEN/DSSAT/GLUE/LHS generation scripts are not provided",
+    "Reference optimizer was not executed during package creation"
+  ]
+}

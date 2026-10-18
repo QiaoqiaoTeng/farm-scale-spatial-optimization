@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript and this versioned software archive."
+title: "Farm-scale mechanistic-surrogate multi-objective spatial optimization: review package"
+authors:
+  - family-names: Teng
+    given-names: Qiaoqiao
+  - family-names: Yu
+    given-names: Renjing
+  - family-names: Tian
+    given-names: Junyao
+  - family-names: Zhang
+    given-names: He
+  - family-names: Li
+    given-names: Fanchuang
+  - family-names: Zhang
+    given-names: Zhanguo
+  - family-names: Xin
+    given-names: Dawei
+  - family-names: Zhu
+    given-names: Rongsheng
+  - family-names: Chen
+    given-names: Qingshan
+version: 0.1.0-review

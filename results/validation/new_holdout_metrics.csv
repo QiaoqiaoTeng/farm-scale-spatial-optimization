@@ -1,0 +1,7 @@
+Crop,Target,Evaluation,Train_Rows,Test_Rows,Random_State,Trees,Test_R2,Test_RMSE,Test_MAE
+Maize,Yield_kg_ha,new 80/20 holdout on uploaded CSV (not paper-verified),560,140,42,100,0.9955510632741406,93.85514597734414,51.982642857142864
+Maize,ET_mm,new 80/20 holdout on uploaded CSV (not paper-verified),560,140,42,100,0.9498730627742403,0.9303474773284586,0.7052142857142842
+Soybean,Yield_kg_ha,new 80/20 holdout on uploaded CSV (not paper-verified),560,140,42,100,0.8964372792661491,66.24947118387331,40.516214285714305
+Soybean,ET_mm,new 80/20 holdout on uploaded CSV (not paper-verified),560,140,42,100,0.7843465021562062,0.9583881557818068,0.7186428571428553
+Rice,Yield_kg_ha,new 80/20 holdout on uploaded CSV (not paper-verified),560,140,42,100,0.9991774087820313,15.941215113212545,7.8972142857142895
+Rice,ET_mm,new 80/20 holdout on uploaded CSV (not paper-verified),560,140,42,100,0.9357023910668772,0.7533837951914955,0.5789999999999972

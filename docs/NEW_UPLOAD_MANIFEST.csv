@@ -1,0 +1,15 @@
+Uploaded_file,Repo_path,Role,Run_status,Notes
+地块可视化(1).py,src/legacy/additional_sources/field_area_visualization_original.py,Historical figure/optimizer reference,Reference only,
+换占位(1).py,src/legacy/additional_sources/template_placeholder_generator_original.py,Historical figure/optimizer reference,Reference only,
+可视化p2-p3(1).py,src/legacy/additional_sources/visualization_p2_p3_variant_with_mock_fallback.py,Historical figure/optimizer reference,Reference only,Contains mock fallback or toy optimizer; do not use as research validation
+批量生成文件(1).py,src/legacy/additional_sources/lhs_dssat_batch_original_path_sanitized.py,LHS and DSSAT batch runner,Original workflow not independently run,Original local absolute paths replaced with neutral placeholders
+Part3_Algorithm_Diagnostics(1).py,src/legacy/additional_sources/algorithm_diagnostics_toy_example.py,Historical figure/optimizer reference,Reference only,Contains mock fallback or toy optimizer; do not use as research validation
+rf-新增可视化(1).py,src/legacy/additional_sources/rf_visualization_historical_3target.py,Historical figure/optimizer reference,Reference only,
+rf-Part1_Optimization(1).py,src/legacy/additional_sources/rf_optimizer_variant.py,Historical figure/optimizer reference,Reference only,
+rf-Part2_Visualization_无图名版(1).py,src/legacy/additional_sources/rf_visualization_variant.py,Historical figure/optimizer reference,Reference only,
+CHXF2401.MZX,dssat/source_experiments/CHXF2401.MZX,Original experiment input,Not DSSAT-validated,External weather/soil/genotype dependencies
+CHXF2402.SBX,dssat/source_experiments/CHXF2402.SBX,Original experiment input,Not DSSAT-validated,External weather/soil/genotype dependencies
+CHXF2403.RIX,dssat/source_experiments/CHXF2403.RIX,Original experiment input,Not DSSAT-validated,External weather/soil/genotype dependencies
+TPL_MAIZE.MZX,dssat/templates/TPL_MAIZE.MZX,Author-supplied placeholder FileX,Offline rendering tested,Not proven full-model runnable
+TPL_SOY.SBX,dssat/templates/TPL_SOY.SBX,Author-supplied placeholder FileX,Offline rendering tested,Not proven full-model runnable
+TPL_RICE.RIX,dssat/templates/TPL_RICE.RIX,Author-supplied placeholder FileX,Offline rendering tested,Not proven full-model runnable

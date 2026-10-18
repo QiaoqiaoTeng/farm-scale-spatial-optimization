@@ -1,0 +1,4 @@
+Crop,File,Rows_Trained,Outputs,Features,Estimator,n_estimators,random_state,Python_Version,scikit_learn_version,joblib_version,sha256
+Maize,maize_yield_et_rf.joblib,700,Yield_kg_ha;ET_mm,Density_plants_m2;Fert_Weight_kg_ha,RandomForestRegressor (multi-output),100,42,3.13.5,1.8.0,1.5.3,d87afeb679d8f124ac24794bab11975ac60fba09af85099cbcd4a031ff3081d3
+Soybean,soybean_yield_et_rf.joblib,700,Yield_kg_ha;ET_mm,Density_plants_m2;Fert_Weight_kg_ha,RandomForestRegressor (multi-output),100,42,3.13.5,1.8.0,1.5.3,a36108036eafeda49213b53214dcfdd3751255a30991f38586c80cfae5d137bd
+Rice,rice_yield_et_rf.joblib,700,Yield_kg_ha;ET_mm,Density_plants_m2;Fert_Weight_kg_ha,RandomForestRegressor (multi-output),100,42,3.13.5,1.8.0,1.5.3,8ac3383ce7f472233c801e230a8f92bfbbca9b3bcae280ef4cc7c6427096c17e

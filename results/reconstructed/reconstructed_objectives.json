@@ -1,0 +1,14 @@
+{
+  "source": "RECONSTRUCTED FROM PROVIDED PLAN; not an original archived run",
+  "objectives": {
+    "Profit": 744975363.078674,
+    "WUE": 2.050266992918621,
+    "Carbon": 224042471.85036886
+  },
+  "constraints": {
+    "maize_area_ha": 19373.0,
+    "soybean_area_ha": 10040.0,
+    "meets_maize_min": true,
+    "meets_soybean_min": true
+  }
+}
