@@ -1,0 +1,14 @@
+
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+__MACOSX/
+.ipynb_checkpoints/
+.pytest_cache/
+.pycache/
+results/recomputed_runs/
+
+# Generated DSSAT test files
+results/generated_dssat_examples/
+results/recomputed_runs/new_lhs_design.csv
